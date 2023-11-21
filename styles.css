@@ -1,0 +1,141 @@
+:root {
+
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --accent: hsl(277, 64%, 61%);
+
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  --fs-primary: 15px;
+  --ff-Poppins: 'Poppins', sans-serif;
+
+  --fw-small: 200;
+  --fw-normal: 400;
+  --fw-semi-bold: 600;
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-Poppins);
+}
+
+#title_1, .text{
+  font-weight: var(--fw-small);
+}
+#title_2, .titles{
+  font-weight: var(--fw-semi-bold);
+}
+
+#description{
+  font-weight: var(--fw-normal);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex: 1;
+  width: 90%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.information_Container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.cards_Contaniner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card_information {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 200px;
+  min-width: 300px;
+  border-radius: 5px;
+  background-color: var(--Very-Light-Gray);
+  box-shadow: 0 0 10px rgba(123, 161, 204, 0.4);
+  padding: 10px;
+}
+
+.icon_cards {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.teamBuilder_Karma_Container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+#Supervisor {
+  border-top: 3px solid var(--Cyan);
+
+
+}
+
+#TeamBuilder {
+  border-top: 3px solid var(--Red);
+  height: 200px;
+
+
+}
+
+#Karma {
+  border-top: 3px solid var(--Orange);
+
+}
+
+#Calculator {
+
+  border-top: 3px solid var(--Blue);
+
+}
+
+
+
+@media (min-width: 945px) {
+  .cards_Contaniner {
+    flex-direction: row;
+  }
+
+}
+@media (max-width: 431px) {
+  .information_Container {
+    font-size: 13px;
+  }
+
+}
